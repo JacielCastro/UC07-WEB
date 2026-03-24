@@ -1,0 +1,136 @@
+/* Reset e Centralização */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a; /* Azul marinho escuro */
+    color: #e2e8f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente se houver altura */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Link de Voltar */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-shadow: 0 0 8px #38bdf8;
+}
+
+/* Título */
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #7c3aed; /* Linha roxa */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Formulário e Fieldset */
+fieldset {
+    background: #1e293b; /* Fundo do card */
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+legend {
+    background-color: #7c3aed;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Campos de Entrada (Inputs, Select, Textarea) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+input[list],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: white;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+}
+
+/* Estilização dos Radios e Checkbox */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #7c3aed; /* Muda a cor da bolinha/check para roxo */
+}
+
+/* Botões */
+input[type="submit"], 
+input[type="reset"] {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+input[type="submit"] {
+    background-color: #38bdf8;
+    color: #0f172a;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0ea5e9;
+    transform: scale(1.05);
+}
+
+input[type="reset"] {
+    background-color: transparent;
+    color: #94a3b8;
+    border: 1px solid #334155;
+}
+
+input[type="reset"]:hover {
+    background-color: #ef4444;
+    color: white;
+    border-color: #ef4444;
+}
+
+/* Ajuste de Espaçamento */
+br {
+    display: block;
+    content: "";
+    margin-top: 10px;
+}

@@ -1,0 +1,77 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0f172a; /* Azul marinho muito escuro (moderno) */
+    color: #e2e8f0; /* Texto quase branco para leitura fácil */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h2 {
+    color: #38bdf8; /* Azul claro ciano */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.3)); /* Brilho suave na logo */
+    border-radius: 10px;
+}
+
+/* Estilização dos Cursos (Cards) */
+p {
+    background: #1e293b; /* Fundo dos cards */
+    border: 1px solid #334155;
+    border-left: 6px solid #7f4cd6; /* Detalhe lateral em roxo neon */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    max-width: 700px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+p:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    background: #243146;
+}
+
+/* Títulos dos Cursos (dentro do p) */
+p u b {
+    color: #38bdf8;
+    font-size: 1.2rem;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Descrição dos Cursos */
+p i {
+    font-style: normal;
+    color: #94a3b8; /* Cinza claro para o texto de descrição */
+    font-size: 0.95rem;
+}
+
+/* Ajuste para telas de celular */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    header img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+/* Estilo Geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6; /* Cor de fundo suave */
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a página no navegador */
+    padding: 20px;
+}
+
+/* Cabeçalhos */
+h2 {
+    color: #073775; /* Azul oceano */
+    border-bottom: 2px solid #75be91; /* Linha amarela lembrando areia/sol */
+    padding-bottom: 5px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* Remove o sublinhado padrão da tag <u> para usarmos o estilo do CSS acima */
+u {
+    text-decoration: none;
+}
+
+/* Parágrafos e Textos em Itálico */
+p i {
+    display: block;
+    background: #fff;
+    padding: 15px;
+    border-left: 5px solid #75be91;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    font-style: normal; /* Remove o itálico visual para ficar mais limpo */
+}
+
+/* Listas */
+ul {
+    list-style: none; /* Remove as bolinhas padrão */
+    padding: 0;
+}
+
+ul li {
+    margin-top: 20px;
+    color: #2f87c2; /* Cor de destaque para os nomes dos locais */
+    font-size: 1.1rem;
+}
+
+/* Ajuste para o conteúdo dentro da lista */
+ul p i {
+    background: #eef2f3;
+    border-left: 5px solid #75be91;
+    margin-top: 5px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}

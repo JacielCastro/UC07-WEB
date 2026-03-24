@@ -1,11 +1,10 @@
-/* Configurações Gerais */
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #0f172a; /* Fundo Escuro Profundo */
+    color: #e2e8f0;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
-    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,64 +12,94 @@ body {
 
 /* Cabeçalho e Navegação */
 header {
-    background-color:#d9e4e7ea;
-    color: white;
     width: 100%;
-    padding: 20px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    padding-bottom: 30px;
+    border-bottom: 2px solid #7c3aed;
 }
 
-nav {
+nav ul, nav h2 {
     list-style: none;
-    padding: 0;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 nav li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav a {
-    color: #00d4ff;
+    color: #38bdf8;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #fff;
+    background-color: #7c3aed;
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
 }
 
 /* Títulos */
 h2 {
-    color: #002b5c;
-    margin-top: 30px;
+    color: #38bdf8;
+    margin-top: 40px;
+    text-align: center;
 }
 
-header h2#Inova {
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+h2 u {
+    text-decoration: none;
+    border-bottom: 3px solid #7c3aed;
+    padding-bottom: 5px;
 }
 
-/* Mídia (Imagens, Vídeos e Mapas) */
+/* Imagens e Mídias */
 img, video, iframe {
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    max-width: 90%; /* Responsividade básica */
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #334155;
+    margin: 20px 0;
+    align-items: center;
+}
+
+/* Estilização do Áudio */
+audio {
+    width: 600px;
+    max-width: 90%;
+    height: 45px;
+    filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Torna o player de áudio combinando com o tema escuro */
+    margin-bottom: 20px;
 }
 
 /* Seção Principal */
 main {
-    width: 80%;
-    max-width: 1000px;
-    text-align: center;
-    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Áudio */
-audio {
-    margin-top: 10px;
-    width: 320px;
+/* Responsividade */
+@media (max-width: 768px) {
+    nav h2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    iframe, video {
+        width: 95%;
+        height: auto;
+    }
 }
