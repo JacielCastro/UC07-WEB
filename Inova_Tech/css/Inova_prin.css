@@ -1,0 +1,76 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color:#d9e4e7ea;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Títulos */
+h2 {
+    color: #002b5c;
+    margin-top: 30px;
+}
+
+header h2#Inova {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Mídia (Imagens, Vídeos e Mapas) */
+img, video, iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 90%; /* Responsividade básica */
+}
+
+/* Seção Principal */
+main {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Áudio */
+audio {
+    margin-top: 10px;
+    width: 320px;
+}
