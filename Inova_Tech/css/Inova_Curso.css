@@ -42,23 +42,24 @@ p {
     max-width: 700px;
     transition: transform 0.3s ease, border-color 0.3s ease;
 } 
-
-
-
-/* Efeito ao passar o mouse */
-a:hover {
-    transform: translateY(-5px);
-    border-color: #38bdf8;
-    background: #243146;
+/* Link de Voltar */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
 
-/* Títulos dos Cursos (dentro do p) */
-a {
-    color: #35cad4;
-    font-size: 1.2rem;
-    text-decoration: none; /* Remove o sublinhado padrão */
-    display: block;
-    margin-bottom: 8px;
+a:hover {
+    color: #fff;
+    background-color: #7c3aed;
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
 }
 
 /* Descrição dos Cursos */
