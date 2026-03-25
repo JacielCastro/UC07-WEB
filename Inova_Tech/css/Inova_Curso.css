@@ -27,7 +27,7 @@ header h2 {
 header img {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.3)); /* Brilho suave na logo */
+    /* filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.3)); Brilho suave na logo */
     border-radius: 10px;
 }
 
@@ -41,18 +41,20 @@ p {
     border-radius: 8px;
     max-width: 700px;
     transition: transform 0.3s ease, border-color 0.3s ease;
-}
+} 
+
+
 
 /* Efeito ao passar o mouse */
-p:hover {
+a:hover {
     transform: translateY(-5px);
     border-color: #38bdf8;
     background: #243146;
 }
 
 /* Títulos dos Cursos (dentro do p) */
-p u b {
-    color: #38bdf8;
+a {
+    color: #35cad4;
     font-size: 1.2rem;
     text-decoration: none; /* Remove o sublinhado padrão */
     display: block;
