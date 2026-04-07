@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Lista de Compras </title>
     <link rel="stylesheet" href="../css/Tela_Lista.css">
+    <script src = '../src/Funcoes.js'>      
+     
+    </script>
 </head>
-<header> 
+
+<body>
+    <header> 
     
-    <h2 class="titulo" > 🛒 Lista de Compras 🛒 </h2>
+    <h2 class="h2" > 🛒 Lista de Compras 🛒 </h2>
 
 </header>
-<body>
     <br><hr>
     <h2><u> Adicione produtos a sua lista </u></h2>
     <h2> Produto </h2>
     <input type="text" id="produto" placeholder="Nome do produto">
-    <h2 class="Categoria"> Categoria </h2>
+    <h2 class="h2"> Categoria </h2>
     <select id="Categoria">
         <option value=""></option>
         <option value="Limpeza"> Limpeza </option>
@@ -26,29 +30,28 @@
         <option value="legunes"> Legunes e Verduras </option>
         <option value="Congelados"> Congelados </option>
     </select>
-    <button id="adicionar"> adicionar </button>
+    <button id="adicionar" onclick='adicionar()'> adicionar</button>
     <br><br>
     <hr>  
     <h2> produtos adicionados </h2>
-    <ul id="Limpeza" >
+    <ul id="Limpeza"> <h3 class="h3">🫧 Limpeza </h3>
+
+    </ul>
+    <ul id="Higiene"> <h3 class="h3">🪥 Higiene </h3>
+
+    </ul>   
+    <ul id="Mecearia"> <h3 class="h3">🍚 Mecearia </h3>
+    
+    </ul>
+    <ul id="Frutas"> <h3 class="h3"> 🍎 Frutas </h3>
         
-    </ul> 
-    <ul id="higiene">
-
     </ul>
-    <ul id="Mecearia">
-
+    <ul id="Legumes"> <h3 class="h3"> 🥕 Legumes </h3>   
+    
     </ul>
-    <ul id="Frutas">
-
+    <ul id="Congelados"> <h3 class="h3"> 🥩 Congelados </h3>
+        
     </ul>
-    <ul id="legunes">
-
-    </ul>
-    <ul id="Congelados">
-
-    </ul>
-
-
+    
 </body>
 </html>
