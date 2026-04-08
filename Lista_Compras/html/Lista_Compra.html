@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Lista de Compras </title>
-    <link rel="stylesheet" href="../css/Tela_Lista.css">
-    <script src = '../src/Funcoes.js' defer>      
+    <link rel="stylesheet" href="../css/Lista_Compra.css">
+    <script src = '../src/Funcao_Lista_Compra.js' defer>      
      
     </script>
 </head>
@@ -28,6 +28,7 @@
         <option value="Mecearia"> 🍚 Mecearia </option>
         <option value="Frutas"> 🍎 Frutas </option>
         <option value="Legumes"> 🥕 Legunes e Verduras </option>
+        <option value="Bebidas"> 🥤 Bebidas </option>
         <option value="Congelados"> 🥩 Congelados </option>
     </select>
     <button id="adicionar" onclick='adicionar()'> adicionar</button>
@@ -49,9 +50,24 @@
     <ul id="Legumes"> <h3 class="h3"> 🥕 Legumes </h3>   
     
     </ul>
+    <ul id="Bebidas"> <h3 class="h3"> 🥤 Bebidas </h3>
+    
+    </ul>
     <ul id="Congelados"> <h3 class="h3"> 🥩 Congelados </h3>
         
     </ul>
-    
+    <br><br>
+    <hr>
+    <h2 class="h2"> ✔️ Itens Concluídos Da Lista </h2>
+    <ul id="concluidos">
+
+    </ul>
+
+    <br><br>
+    <hr>
+    <button onclick="enviarWhatsApp()" >
+    Enviar lista via WhatsApp 📱
+    </button>
+   
 </body>
 </html>
