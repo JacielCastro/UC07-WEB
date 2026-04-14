@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> QUADRO KANBAN BÁSICO </title>
     <link rel="stylesheet" href="../css/kambam.css">
-    <script src="../src/kambam.js"></script>
+    <script src="../src/kanban.js"></script>
 
 </head>
 <header>
@@ -15,18 +15,18 @@
 
 <body>
     <h2 id="h2"> Título </h2>
-    <input type="text">
+    <input type="text" id="Titulo" placeholder=" Escreva o Título">
     <h2 id="h2"> Descrição </h2>
-    <input type="text">
+    <input type="text" id="Descricao" placeholder="Escreva a Descrição">
     <h2 id="h2"> Prioridade </h2>
     <!-- Select para selecionar a prioridade -->
-    <select id="prioridade">
+    <select id="Prioridade">
         <option value=""></option>
         <option value="Baixo"> Baixo </option>
         <option value="Medio"> Médio </option>
         <option value="Alto"> Alto </option>
     </select>
-    <button id="butao"> Adicionar </button>
+    <button id="butao" onclick="adicionar_card()"> Adicionar </button>
     <br><hr>
 <div class="kanban">
     <!-- Coluna 1 -->
