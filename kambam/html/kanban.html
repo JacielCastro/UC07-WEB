@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QUADRO KANBAN BÁSICO </title>
+    <link rel="stylesheet" href="../css/kambam.css">
+    <script src="../src/kambam.js"></script>
+
+</head>
+<header>
+    <h2> QUADRO KANBAN BÁSICO </h2>
+    <hr><br>
+</header>
+
+<body>
+    <h2 id="h2"> Título </h2>
+    <input type="text">
+    <h2 id="h2"> Descrição </h2>
+    <input type="text">
+    <h2 id="h2"> Prioridade </h2>
+    <!-- Select para selecionar a prioridade -->
+    <select id="prioridade">
+        <option value=""></option>
+        <option value="Baixo"> Baixo </option>
+        <option value="Medio"> Médio </option>
+        <option value="Alto"> Alto </option>
+    </select>
+    <button id="butao"> Adicionar </button>
+    <br><hr>
+<div class="kanban">
+    <!-- Coluna 1 -->
+    <div class="Coluna"> 
+        <h2> A Fazer </h2>
+    </div>
+    <!-- Coluna 2 -->
+    <div class="Coluna"> 
+        <h2> Em Desenvolvimento </h2>
+    </div>
+    <!-- Coluna 3 -->
+    <div class="Coluna"> 
+        <h2> Em Teste </h2>
+    </div>
+    <!-- Coluna 4 -->
+    <div class="Coluna">
+        <h2> Concluído </h2>
+    </div>
+</div>    
+
+
+</body>
+</html>
