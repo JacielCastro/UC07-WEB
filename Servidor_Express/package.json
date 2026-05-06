@@ -4,7 +4,9 @@
   "description": "",
   "main": "funcoes.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -13,12 +15,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/jacielCastro/uc07-web/issues"
   },
   "homepage": "https://github.com/jacielCastro/uc07-web#readme",
   "dependencies": {
-    "nodemon": "^3.1.14",
+    "express": "^5.2.1",
     "random-words": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
